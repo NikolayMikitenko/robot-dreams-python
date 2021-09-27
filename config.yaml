@@ -1,0 +1,20 @@
+out_of_stock_app:
+  url: https://robot-dreams-de-api.herokuapp.com
+  headers:
+    Content-type: "application/json"
+  auth:
+    type: JWT TOKEN
+    endpoint: /auth
+    parameters: {"username": "rd_dreams", "password": "djT6LasE"}
+  endpoint: /out_of_stock
+  parameters: {"date": "2021-01-02"}
+  data parameter: date
+
+product_app:
+  url: https://robot-dreams-de-api.herokuapp.com
+  auth:
+    type: JWT TOKEN
+    endpoint: /auth
+    parameters: {"username": "rd_dreams", "password": "djT6LasE"}
+  endpoint: /product
+  parameters: {"id": "1"}  
